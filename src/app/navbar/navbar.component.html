@@ -7,30 +7,17 @@
         <h1 class="logo">GD.</h1>
       </a>
     </li>
-    <li>
-      <a href="">
-        <h3 class="nav-elements">About</h3>
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <h3 class="nav-elements">Services</h3>
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <h3 class="nav-elements">Our Work</h3>
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <h3 class="nav-elements btn dark">Enroll Now</h3>
-      </a>
-    </li>
+    <app-nav-elements />
     <li>
       <a href="#" class="icon">
-        <img src="assets/two-bar-icon.svg" alt="Hamburger Icon" />
+        <img
+          (click)="handleClick()"
+          src="assets/two-bar-icon.svg"
+          alt="Hamburger Icon"
+        />
       </a>
     </li>
   </ul>
+
+  <app-mobile-menu *ngIf="showMobileMenu"></app-mobile-menu>
 </nav>
