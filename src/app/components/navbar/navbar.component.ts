@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MobileMenuComponent } from '../mobile-menu/mobile-menu.component';
+import { MobileMenuComponent } from './nav-elements/mobile/mobile-menu/mobile-menu.component';
 
 @Component({
   selector: 'app-navbar',
