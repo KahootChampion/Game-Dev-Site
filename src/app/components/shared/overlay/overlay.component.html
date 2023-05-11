@@ -2,6 +2,10 @@
   <div class="center-box">
     <ng-container *ngComponentOutlet="navComponent"></ng-container>
   </div>
-
-  <img class="exit-icon" src="/assets/x-icon.svg" alt="X" />
+  <img
+    (click)="closeMenu()"
+    class="exit-icon"
+    src="/assets/x-icon.svg"
+    alt="X"
+  />
 </div>

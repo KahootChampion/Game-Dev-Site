@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-overlay',
@@ -7,4 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class OverlayComponent {
   @Input() navComponent: any;
+  @Output() closeMobileMenu = new EventEmitter<boolean>();
+
+  closeMenu(): void {
+    console.log('emitting');
+
+    this.closeMobileMenu.emit(true);
+  }
 }

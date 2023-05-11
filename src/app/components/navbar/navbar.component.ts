@@ -10,6 +10,12 @@ export class NavbarComponent {
   showMobileMenu: boolean = false;
 
   handleClick() {
+    console.log('mobile menu bool toggled');
     this.showMobileMenu = !this.showMobileMenu;
+  }
+
+  onCloseMobileMenu(event: any): void {
+    console.log('Event triggered');
+    this.showMobileMenu = false;
   }
 }

@@ -19,5 +19,8 @@
     </li>
   </ul>
 
-  <app-mobile-menu *ngIf="showMobileMenu"></app-mobile-menu>
+  <app-mobile-menu
+    (secondCloseMobileMenu)="onCloseMobileMenu($event)"
+    *ngIf="showMobileMenu"
+  ></app-mobile-menu>
 </nav>
