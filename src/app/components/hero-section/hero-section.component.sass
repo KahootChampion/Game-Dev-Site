@@ -1,0 +1,78 @@
+$white-color: #ffffff
+$orange-color: #DA722C
+$raleway: 'Raleway', sans-serif
+$poppins: 'Poppins', sans-serif
+
+
+:host
+    font-family: $poppins
+
+
+.container
+    max-width: 80%
+    margin: 0 32px
+    height: calc(100dvh - 170px)
+    display: flex
+    flex-direction: column
+ 
+
+h1, h2, h3, h4, h5, h6, p
+  color: $white-color   
+
+h1
+    font-family: $raleway
+    
+
+.card-and-image-container
+    flex: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.hero-image
+    max-width: 306px
+    max-height: 399px
+
+.descriptive-text
+    margin-top: 16px
+    margin-bottom: 34px
+
+
+.card-container
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: flex-start
+
+
+.card
+    background-color: $white-color
+    border-radius: 24px
+    padding: 6px 36px
+
+
+.card *
+    color: black
+
+.card-num
+    font-size: calc(30/16) * 1rem
+
+.btn
+    align-self: flex-start
+    display: flex
+    gap: 10px
+    padding: 10px 32px 
+    background-color: $orange-color
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 24px
+    border: none
+
+.card-num-image-container
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+
+.star-icon
+    width: 35px
+    height: 35px
