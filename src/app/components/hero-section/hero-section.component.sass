@@ -6,14 +6,16 @@ $poppins: 'Poppins', sans-serif
 
 :host
     font-family: $poppins
-
+    
 
 .container
     max-width: 80%
     margin: 0 32px
-    height: calc(100dvh - 170px)
+    height: calc(100dvh - 130px)
     display: flex
     flex-direction: column
+    // overflow-y: hidden
+
  
 
 h1, h2, h3, h4, h5, h6, p
@@ -28,10 +30,15 @@ h1
     display: flex
     justify-content: space-between
     align-items: center
+    position: relative
+    z-index: -1
+
+.hero-image-container
+    align-self: flex-end
 
 .hero-image
-    max-width: 306px
-    max-height: 399px
+    max-width: 125%
+    height: auto
 
 .descriptive-text
     margin-top: 16px
