@@ -17,9 +17,10 @@ $poppins: 'Poppins', sans-serif
     flex-direction: column
 
 .encompassing-container
-    overflow: hidden
+   
     position: relative 
-    z-index: -1
+    overflow: hidden
+    // z-index: -1
 
 h1, h2, h3, h4, h5, h6, p
   color: $white-color   
@@ -137,3 +138,16 @@ h1
 
     .card-num
         font-size: calc(36/16) * 1rem
+
+@media (min-width: 900px)
+    .container
+        overflow: auto
+        flex-direction: row
+
+
+    .information-container
+        max-width: 40%
+
+    .hero-image
+        max-width: 446px
+        max-height: 582px
