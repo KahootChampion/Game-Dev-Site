@@ -155,6 +155,16 @@ h1
         transform: translateY(50px) translateX(50px)
 
 
+    .card
+        transform-style: preserve-3d
+        transform: translateX(50px)
+
+        &::after
+            transform: translateX(10px) translateZ(-1px)
+
+            
+       
+
     .hero-image
         max-width: 446px
         max-height: 582px
