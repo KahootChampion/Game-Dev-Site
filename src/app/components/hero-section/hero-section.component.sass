@@ -1,3 +1,4 @@
+@import '../../../styles'
 $white-color: #ffffff
 $orange-color: #DA722C
 $raleway: 'Raleway', sans-serif
@@ -140,12 +141,16 @@ h1
 //     .card-num
 //         font-size: calc(36/16) * 1rem
 
-@media (min-width: 900px)
+@include desktop-and-beyond
     .container
         overflow: auto
         flex-direction: row
         align-items: baseline
         justify-content: space-between
+        margin-top: 0
+        margin-bottom: 0
+        @include normal-left-right-margins
+        
 
 
     .information-container
