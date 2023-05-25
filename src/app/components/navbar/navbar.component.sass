@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6
 
 @include tablet-and-beyond
   .nav-margins
-    @include normal-left-right-margins
+    @include tablet-left-right-margins
     
   .nav-elements 
     display: block
@@ -68,6 +68,11 @@ h1, h2, h3, h4, h5, h6
 
   .icon
     display: none
+
+@include desktop-and-beyond
+  .nav-margins
+    @include desktop-left-right-margins
+    
 
 
 

@@ -16,10 +16,13 @@ html
   margin-left: 32px
   margin-right: 32px
 
-@mixin normal-left-right-margins
+@mixin tablet-left-right-margins
   margin-left: 60px
   margin-right: 60px
 
+@mixin desktop-left-right-margins
+  margin-left: 116px
+  margin-right: 116px
 
 @mixin tablet-and-beyond
   @media(min-width: 650px)
@@ -27,7 +30,7 @@ html
 
 
 @mixin desktop-and-beyond
-  @media(min-width: 1050px)
+  @media(min-width: 1130px)
     @content
 
 
