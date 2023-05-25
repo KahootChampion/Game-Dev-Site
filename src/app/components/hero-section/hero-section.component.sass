@@ -141,16 +141,19 @@ h1
 //     .card-num
 //         font-size: calc(36/16) * 1rem
 
+@include tablet-and-beyond
+    .container
+        margin-top: 0
+        margin-bottom: 0
+        @include normal-left-right-margins
+
+
 @include desktop-and-beyond
     .container
         overflow: auto
         flex-direction: row
         align-items: baseline
-        justify-content: space-between
-        margin-top: 0
-        margin-bottom: 0
-        @include normal-left-right-margins
-        
+        justify-content: space-between        
 
 
     .information-container
